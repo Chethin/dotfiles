@@ -16,7 +16,7 @@ cmd - return: yabai -m window --toggle native-fullscreen
 
 # Open windows quickly
 cmd + lshift - return: open -a "/Applications/Zen Browser.app";
-# cmd + rshift: open -a 'ghostty'
+cmd + shift - escape: open -a 'ghostty'
 
 # App shortcuts
 alt - c: open -a 'Visual Studio Code'
