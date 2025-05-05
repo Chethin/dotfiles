@@ -17,7 +17,7 @@ local messages = sbar.add("item", "messages", {
     font = {
       family = settings.font.numbers,
       style = settings.font.style_map["Bold"],
-      size = 11.0,
+      size = 12.0,
     },
   },
   drawing = true,
