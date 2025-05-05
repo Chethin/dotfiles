@@ -1,0 +1,77 @@
+# Yabai configuration
+
+# Unload the macOS WindowManager process
+launchctl unload -F /System/Library/LaunchAgents/com.apple.WindowManager.plist > /dev/null 2>&1 &
+
+sudo yabai --load-sa
+
+# Signals
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
+yabai -m signal --add event=window_created action="sketchybar --trigger windows_on_spaces"
+yabai -m signal --add event=window_destroyed action="sketchybar --trigger windows_on_spaces"
+
+yabai -m signal --add event=application_terminated action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
+yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
+yabai -m signal --add event=application_terminated action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
+
+
+# global settings
+yabai -m config layout                     bsp          \
+                window_placement           second_child \
+                mouse_follows_focus        off          \
+                focus_follows_mouse        off          \
+                window_zoom_persist        off          \
+                window_topmost             off          \
+                window_opacity             on           \
+                window_opacity_duration    0.0          \
+                active_window_opacity      0.90         \
+                normal_window_opacity      0.87         \
+                window_border              on           \
+                window_shadow              off          \
+                                                        \
+                auto_balance               off          \
+                window_animation_duration  0            \
+                split_ratio                0.50         \
+                                                        \
+                mouse_modifier             alt          \
+                mouse_action1              move         \
+                mouse_action2              resize       \
+                mouse_drop_action          swap         \
+                insert_feedback_color      0xff9dd274   \
+                                                        \
+                top_padding                12           \
+                bottom_padding             12           \
+                left_padding               12           \
+                right_padding              12           \
+                window_gap                 12
+
+echo "yabai configuration loaded.."
+
+# Exclude problematic apps from being managed:
+yabai -m rule --add app="^(Software Update|Dictionary|VLC|System Preferences|System Settings|zoom.us|Photo Booth|Archive Utility|App Store|Activity Monitor|Karabiner-Elements|Raycast)$" manage=off
+yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref|Recent|Downloads)" manage=off
+yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
+
+# Apps I choose to float and not managed
+yabai -m rule --add app="^Calculator$" float=on layer=above
+yabai -m rule --add app="^Calendar$" manage=off
+yabai -m rule --add app="^NordVPN$" manage=off
+yabai -m rule --add app="^Messages$" manage=off
+
+
+
+# move some apps automatically to specific spaces
+yabai -m rule --add app="Zen Browser" space=^1
+yabai -m rule --add app="Code" space=2
+yabai -m rule --add app="ChatGPT" space=2
+yabai -m rule --add app="Obsidian" space=4
+yabai -m rule --add app="Discord" space=^5
+yabai -m rule --add app="^Spotify$" space=^6
+
+
+# to add janky borders on active window
+# NOTE: keep at the bottom of this file
+borders
+
+yabai -m rule --apply

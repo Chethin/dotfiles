@@ -1,0 +1,55 @@
+# focus window
+alt - h: yabai -m window --focus west
+alt - j: yabai -m window --focus south
+alt - k: yabai -m window --focus north
+alt - l: yabai -m window --focus east
+alt - b: yabai -m space --balance
+
+# swap managed window
+shift + alt - h: yabai -m window --swap west
+shift + alt - j: yabai -m window --swap south
+shift + alt - k: yabai -m window --swap north
+shift + alt - l: yabai -m window --swap east
+
+# Fullscreen
+cmd - return: yabai -m window --toggle native-fullscreen
+
+# Open windows quickly
+cmd + lshift - return: open -a "/Applications/Zen Browser.app";
+# cmd + rshift: open -a 'ghostty'
+
+# App shortcuts
+alt - c: open -a 'Visual Studio Code'
+alt - s: open -a 'Spotify'
+alt - d: open -a 'Discord'
+alt - a: open -a 'ChatGPT'
+alt - f: open -a 'Finder'
+alt - m: open -a 'Messages'
+alt - t: open -a 'ghostty'
+
+# stop/start/restart yabai
+ctrl + alt - q: yabai --stop-service;
+ctrl + alt - s: yabai --start-service;
+ctrl + alt - r: yabai --restart-service;
+
+# focus on space
+alt - 1: yabai -m space --focus 1
+alt - 2: yabai -m space --focus 2
+alt - 3: yabai -m space --focus 3
+alt - 4: yabai -m space --focus 4
+alt - 5: yabai -m space --focus 5
+alt - 6: yabai -m space --focus 6
+# alt - 7 : yabai -m space --focus 7
+# alt - 8 : yabai -m space --focus 8
+# alt - 9 : yabai -m space --focus 9
+
+# move window to space
+ctrl - 1: yabai -m window --space 1 --focus
+ctrl - 2: yabai -m window --space 2 --focus
+ctrl - 3: yabai -m window --space 3 --focus
+ctrl - 4: yabai -m window --space 4 --focus
+ctrl - 5: yabai -m window --space 5 --focus
+ctrl - 6: yabai -m window --space 6 --focus
+# ctrl - 7: yabai -m window --space 7 --focus
+# ctrl - 8: yabai -m window --space 8 --focus
+# ctrl - 9: yabai -m window --space 9 --focu9
