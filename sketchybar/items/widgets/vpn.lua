@@ -33,7 +33,7 @@ local function check_vpn()
 
     if output ~= "" then
       vpn:set({
-        icon = { color = colors.green },
+        icon = { color = colors.blue},
       })
     else
       vpn:set({
