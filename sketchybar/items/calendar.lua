@@ -16,7 +16,7 @@ local cal = sbar.add("item", {
   label = {
     color = colors.white,
     padding_right = 8,
-    width = 68,
+    width = 58,
     align = "right",
     font = { family = settings.font.numbers },
   },
@@ -45,5 +45,9 @@ sbar.add("bracket", { cal.name }, {
 sbar.add("item", { position = "right", width = settings.group_paddings })
 
 cal:subscribe({ "forced", "routine", "system_woke" }, function(env)
-  cal:set({ icon = os.date("%a. %d %b."), label = os.date("%I:%M%p") })
+  local hour = os.date("%I")
+  -- Remove leading zero manually
+  hour = hour:gsub("^0", "")
+  local time = string.format("%s:%s%s", hour, os.date("%M"), string.lower(os.date("%p")))
+  cal:set({ icon = os.date("%a. %d %b."), label = time })
 end)
