@@ -23,7 +23,7 @@ yabai -m config layout                     bsp          \
                 focus_follows_mouse        off          \
                 window_zoom_persist        off          \
                 window_topmost             off          \
-                window_opacity             on           \
+                window_opacity             off           \
                 window_opacity_duration    0.0          \
                 active_window_opacity      0.90         \
                 normal_window_opacity      0.87         \
@@ -72,6 +72,7 @@ yabai -m rule --add app="^Spotify$" space=^6
 
 # to add janky borders on active window
 # NOTE: keep at the bottom of this file
-borders
+# borders
+# FIXME: after this works with new macos I can bring it back
 
 yabai -m rule --apply

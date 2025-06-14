@@ -1,0 +1,23 @@
+# CMD + ESC for quick terminal
+keybind = global:command+escape=toggle_quick_terminal
+
+# initialise theme
+theme = "the-one"
+
+# background
+background-blur = true
+background-opacity = 0.8
+window-padding-x = 10, 15
+window-padding-y = 5,15
+window-padding-balance = true
+
+# kiss me
+font-family = "MesloLGS NF"
+font-size = 15
+
+
+# porn at this point really
+macos-titlebar-style = hidden
+window-decoration = false
+
+
