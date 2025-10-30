@@ -5,11 +5,12 @@ alt - k: yabai -m window --focus north
 alt - l: yabai -m window --focus east
 alt - b: yabai -m space --balance
 
-# swap managed window
-shift + alt - h: yabai -m window --swap west
-shift + alt - j: yabai -m window --swap south
-shift + alt - k: yabai -m window --swap north
-shift + alt - l: yabai -m window --swap east
+# change master width
+lalt + shift - h : ~/.config/skhd/resizeWindow.sh -h
+lalt + shift - l : ~/.config/skhd/resizeWindow.sh -l
+# change split height
+lalt + shift - u : ~/.config/skhd/resizeWindow.sh -u
+lalt + shift - d : ~/.config/skhd/resizeWindow.sh -d
 
 # Fullscreen
 cmd - return: yabai -m window --toggle native-fullscreen
@@ -25,7 +26,6 @@ alt - d: open -a 'Discord'
 alt - a: open -a 'ChatGPT'
 alt - f: open -a 'Finder'
 alt - m: open -a 'Messages'
-alt - t: open -a 'ghostty'
 
 # stop/start/restart yabai
 ctrl + alt - q: yabai --stop-service;

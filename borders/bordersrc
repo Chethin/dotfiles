@@ -2,11 +2,11 @@
 
 options=(
 	style=round
-	width=8
+	width=6
 	hidpi=on
 	inactive_color="0x55FFFFFF"
 	active_color="0xAAFFFFFF"
-  blacklist="Messages,Calendar,Calculator,Notes,Reminders,Contacts,FaceTime,Maps,Stocks,Weather,News,Podcasts,TV,iTunes Store,App Store,System Settings,Shortcuts,Finder,Find My,Photos,Music,Mail,Safari,System Preferences"
+  blacklist="Messages,Calendar,Calculator,Notes,Reminders,Contacts,FaceTime,Maps,Stocks,Weather,News,Podcasts,iTunes Store,App Store,System Settings,Shortcuts,Finder,Find My,Photos,Music,Mail,Safari,System Preferences, CleanMyMac X"
 )
 
 borders "${options[@]}"

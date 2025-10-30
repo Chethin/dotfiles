@@ -23,11 +23,11 @@ yabai -m config layout                     bsp          \
                 focus_follows_mouse        off          \
                 window_zoom_persist        off          \
                 window_topmost             off          \
-                window_opacity             off           \
+                window_opacity             on           \
                 window_opacity_duration    0.0          \
                 active_window_opacity      0.90         \
                 normal_window_opacity      0.87         \
-                window_border              on           \
+                window_border              off           \
                 window_shadow              off          \
                                                         \
                 auto_balance               off          \
@@ -60,11 +60,10 @@ yabai -m rule --add app="^NordVPN$" manage=off
 yabai -m rule --add app="^Messages$" manage=off
 
 
-
 # move some apps automatically to specific spaces
 yabai -m rule --add app="Zen Browser" space=^1
 yabai -m rule --add app="Code" space=2
-yabai -m rule --add app="ChatGPT" space=2
+yabai -m rule --add app="ChatGPT" space=3
 yabai -m rule --add app="Obsidian" space=4
 yabai -m rule --add app="Discord" space=^5
 yabai -m rule --add app="^Spotify$" space=^6
@@ -72,7 +71,6 @@ yabai -m rule --add app="^Spotify$" space=^6
 
 # to add janky borders on active window
 # NOTE: keep at the bottom of this file
-# borders
-# FIXME: after this works with new macos I can bring it back
+borders
 
 yabai -m rule --apply
