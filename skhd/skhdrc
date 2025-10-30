@@ -5,15 +5,15 @@ alt - k: yabai -m window --focus north
 alt - l: yabai -m window --focus east
 alt - b: yabai -m space --balance
 
-# change master width
+# change height and width of focussed window
 lalt + shift - h : ~/.config/skhd/resizeWindow.sh -h
 lalt + shift - l : ~/.config/skhd/resizeWindow.sh -l
-# change split height
 lalt + shift - u : ~/.config/skhd/resizeWindow.sh -u
 lalt + shift - d : ~/.config/skhd/resizeWindow.sh -d
 
-# Fullscreen
+# toggle Fullscreen or Float
 cmd - return: yabai -m window --toggle native-fullscreen
+alt - t : yabai -m window --toggle float
 
 # Open windows quickly
 cmd + lshift - return: open -a "/Applications/Zen Browser.app";
