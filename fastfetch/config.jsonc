@@ -93,8 +93,9 @@
       "type": "memory"
     },
     {
-      "key": "│ {#36} battery {#keys}│",
-      "type": "battery"
+      "key": "│ {#36}󰂄 battery {#keys}│",
+      "type": "battery",
+      "format": "{capacity-bar} {time-formatted} remaining"
     },
     {
       "key": "├───────────┤",
