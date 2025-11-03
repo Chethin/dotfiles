@@ -18,6 +18,6 @@ font-size = 15
 
 # porn at this point really
 macos-titlebar-style = hidden
-window-decoration = false
+# window-decoration = true
 
 

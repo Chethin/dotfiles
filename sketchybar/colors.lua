@@ -13,13 +13,15 @@ return {
 	bar = {
 		bg = 0xf02c2e34,
 		border = 0xff2c2e34,
+		transparent = 0x00000000,
 	},
 	popup = {
 		bg = 0xc02c2e34,
 		border = 0xff7f8490,
 	},
-	bg1 = 0xff172929,
-	bg2 = 0x0041455,
+	bg1 = 0x9f172929,
+	bg2 = 0x9f202e2e,
+	hover = 0x3F0e9999,
 
 	with_alpha = function(color, alpha)
 		if alpha > 1.0 or alpha < 0.0 then

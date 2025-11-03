@@ -30,7 +30,7 @@ return {
     },
     config = function(_, opt)
       local overseer = require("overseer")
-      overseer.setup(opts)
+      overseer.setup(opt)
 
       -- Helper to create a task
       local function mk(name, cmd, args, cwd)
