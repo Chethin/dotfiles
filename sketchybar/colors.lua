@@ -19,9 +19,9 @@ return {
 		bg = 0xc02c2e34,
 		border = 0xff7f8490,
 	},
-	bg1 = 0x9f172929,
-	bg2 = 0x9f202e2e,
-	hover = 0x3F0e9999,
+	bg1 = 0x3F268c8c,
+	bg2 = 0x00202e2e,
+	hover = 0x3F0cc9c9,
 
 	with_alpha = function(color, alpha)
 		if alpha > 1.0 or alpha < 0.0 then
