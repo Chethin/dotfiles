@@ -16,9 +16,11 @@ window-padding-balance = true
 # kiss me
 font-family = "MesloLGS NF"
 font-size = 13
+cursor-color = #b9c0c7
+cursor-text = #041221
 macos-titlebar-style = hidden
 
-# porn at this point really
+# porn at this point really101c29
 # custom-shader = shaders/cursor_smear.glsl
 custom-shader = shaders/cursor_frozen.glsl
 # custom-shader = shaders/cursor_blaze_tapered.glsl
