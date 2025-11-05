@@ -13,7 +13,7 @@ yabai -m signal --add event=window_destroyed action="sketchybar --trigger space_
 
 yabai -m signal --add event=window_destroyed action='yabai -m window --focus first || true'
 yabai -m signal --add event=application_terminated action='yabai -m window --focus first || true'
-
+yabai -m signal --add event=display_changed action='yabai -m window --focus first || true'
 
 # global settings
 yabai -m config layout                     bsp          \
@@ -64,8 +64,7 @@ yabai -m rule --add app="Zen Browser" space=^1
 yabai -m rule --add app="Code" space=2
 yabai -m rule --add app="ChatGPT" space=3
 yabai -m rule --add app="Obsidian" space=4
-yabai -m rule --add app="Discord" space=^5
-yabai -m rule --add app="^Spotify$" space=^6
+yabai -m rule --add app="Discord" space=^6
 
 
 # to add janky borders on active window
