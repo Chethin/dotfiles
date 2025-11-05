@@ -99,6 +99,7 @@ return {
       shade_terminals = false,
       persist_mode = false,
       start_in_insert = true,
+      direction = "horizontal",
       -- You can tune sizes/directions globally here
     },
   },

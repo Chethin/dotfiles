@@ -8,4 +8,7 @@ map("n", "<C-d>", "<C-d>zz", { noremap = true, silent = true })
 map("n", "<D-j>", "10jzz", { noremap = true, silent = true })
 map("n", "<D-k>", "10kzz", { noremap = true, silent = true })
 
+-- for commenting
+map("n", "<D-/>", "gc", { noremap = true, silent = true })
+
 vim.keymap.set({ "i", "x", "n", "s" }, "<D-s>", "<cmd>w<cr><esc>", { desc = "Save file" })

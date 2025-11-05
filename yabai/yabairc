@@ -11,15 +11,14 @@ yabai -m signal --add event=window_focused action="sketchybar --trigger window_f
 yabai -m signal --add event=window_created action="sketchybar --trigger space_windows_change"
 yabai -m signal --add event=window_destroyed action="sketchybar --trigger space_windows_change"
 
-yabai -m signal --add event=application_terminated action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
-yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
-yabai -m signal --add event=application_terminated action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
+yabai -m signal --add event=window_destroyed action='yabai -m window --focus first || true'
+yabai -m signal --add event=application_terminated action='yabai -m window --focus first || true'
 
 
 # global settings
 yabai -m config layout                     bsp          \
                 window_placement           second_child \
-                mouse_follows_focus        off          \
+                mouse_follows_focus        on           \
                 focus_follows_mouse        off          \
                 window_zoom_persist        off          \
                 window_topmost             off          \
@@ -27,7 +26,7 @@ yabai -m config layout                     bsp          \
                 window_opacity_duration    0.0          \
                 active_window_opacity      0.90         \
                 normal_window_opacity      0.80         \
-                window_border              off           \
+                window_border              off          \
                 window_shadow              off          \
                                                         \
                 auto_balance               off          \
