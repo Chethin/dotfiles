@@ -17,4 +17,45 @@ return {
       end,
     },
   },
+
+  {
+    "Mofiqul/vscode.nvim",
+    lazy = false,
+    config = function()
+      -- Set theme style: "dark", "light", or "highcontrast"
+      vim.g.vscode_style = "dark"
+      require("vscode").setup()
+      require("vscode").load()
+    end,
+  },
+
+  {
+    "rebelot/kanagawa.nvim",
+    lazy = false, -- load immediately
+    config = function()
+      require("kanagawa").setup({
+        compile = true, -- enable compiling for faster startup
+        undercurl = true, -- enable undercurls
+        commentStyle = { italic = true },
+        functionStyle = { italic = false },
+        keywordStyle = { italic = false },
+        statementStyle = { bold = true },
+        typeStyle = {},
+        variablebuiltinStyle = { italic = true },
+        specialReturn = true,
+        specialException = true,
+        dimInactive = false, -- dim inactive windows
+        transparent = false, -- set true for no background
+        colors = {
+          theme = {
+            all = {
+              ui = {
+                bg_gutter = "none", -- remove background of line number gutter
+              },
+            },
+          },
+        },
+      })
+    end,
+  },
 }
