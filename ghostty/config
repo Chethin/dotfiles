@@ -1,7 +1,7 @@
 # CMD + ESC for quick terminal
 keybind = global:command+escape=toggle_quick_terminal
 
-confirm-close-surface = false
+confirm-close-surface = true
 
 # initialise theme
 theme = "the-one"

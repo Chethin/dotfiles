@@ -12,19 +12,19 @@ lalt + shift - u : ~/.config/skhd/resizeWindow.sh -u
 lalt + shift - d : ~/.config/skhd/resizeWindow.sh -d
 
 # toggle Fullscreen or Float
-cmd - return: yabai -m window --toggle native-fullscreen
-alt - t : yabai -m window --toggle float
+alt - f : yabai -m window --toggle native-fullscreen
+alt - t : ~/.config/skhd/toggleFloat.sh
 
 # Open windows quickly
-cmd + lshift - return: open -a "/Applications/Zen Browser.app";
-cmd + shift - escape: open -a 'ghostty'
+cmd + lshift - return : open -a "/Applications/Zen Browser.app";
+cmd - return : open -a 'ghostty'
 
 # App shortcuts
-alt - c: open -a 'Visual Studio Code'
+# alt - c: open -n -a Ghostty --args --command nvim
 alt - s: open -a 'Spotify'
 alt - d: open -a 'Discord'
 alt - a: open -a 'ChatGPT'
-alt - f: open -a 'Finder'
+# alt - f: open -a 'Finder'
 alt - m: open -a 'Messages'
 
 # stop/start/restart yabai
@@ -32,7 +32,6 @@ ctrl + alt - q: yabai --stop-service;
 ctrl + alt - s: yabai --start-service;
 ctrl + alt - r: yabai --restart-service;
 
-# focus on space
 alt - 1: yabai -m space --focus 1
 alt - 2: yabai -m space --focus 2
 alt - 3: yabai -m space --focus 3
