@@ -5,5 +5,3 @@ local opt = vim.opt
 
 opt.colorcolumn = "80"
 opt.textwidth = 80
-
-vim.cmd([[highlight ColorColumn ctermbg=0 guibg=#2a2a2a]])

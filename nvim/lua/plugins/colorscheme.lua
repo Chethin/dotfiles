@@ -14,21 +14,22 @@ return {
         -- brighter relative numbers above/below
         hl.LineNrAbove = { fg = colors.fg }
         hl.LineNrBelow = { fg = colors.fg }
+        hl.ColorColumn = { bg = colors.bg_dark }
       end,
     },
   },
 
+  -- Vscode theme
   {
     "Mofiqul/vscode.nvim",
     lazy = false,
     config = function()
       -- Set theme style: "dark", "light", or "highcontrast"
       vim.g.vscode_style = "dark"
-      require("vscode").setup()
-      require("vscode").load()
     end,
   },
 
+  -- Kanagawa theme
   {
     "rebelot/kanagawa.nvim",
     lazy = false, -- load immediately
@@ -38,7 +39,7 @@ return {
         undercurl = true, -- enable undercurls
         commentStyle = { italic = true },
         functionStyle = { italic = false },
-        keywordStyle = { italic = false },
+
         statementStyle = { bold = true },
         typeStyle = {},
         variablebuiltinStyle = { italic = true },
