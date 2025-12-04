@@ -3,6 +3,8 @@ keybind = global:command+escape=toggle_quick_terminal
 
 confirm-close-surface = true
 
+macos-option-as-alt = true
+
 # initialise theme
 theme = "the-one"
 
@@ -21,8 +23,8 @@ cursor-text = #041221
 macos-titlebar-style = hidden
 
 # porn at this point really
-# custom-shader = shaders/cursor_smear.glsl
-custom-shader = shaders/cursor_frozen.glsl
+custom-shader = shaders/cursor_smear.glsl
+# custom-shader = shaders/cursor_frozen.glsl
 # custom-shader = shaders/bloom025.glsl
 # custom-shader = shaders/cursor_blaze_tapered.glsl
 
