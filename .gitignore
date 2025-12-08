@@ -1,1 +1,10 @@
+# Ignore everything but what I want to store in the remote
+*
 
+!.zshrc
+!.config/btop
+!.config/fastfetch
+!.config/ghostty
+!.config/hypr
+!.config/nvim
+!.config/waybar
