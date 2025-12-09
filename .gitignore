@@ -2,11 +2,12 @@
 !.gitignore
 
 !.zshrc
-!.config/borders
-!.config/btop
-!.config/fastfetch
-!.config/ghostty
-!.config/nvim
-!.config/sketchybar
-!.config/skhd
-!.config/yabai
+!.config/
+!.config/borders/
+!.config/btop/
+!.config/fastfetch/
+!.config/ghostty/
+!.config/nvim/
+!.config/sketchybar/
+!.config/skhd/
+!.config/yabai/
