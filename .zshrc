@@ -58,6 +58,7 @@ alias speed=speedtest-cli
 alias ls="eza --long --color=always --icons=always --no-user"
 alias top='btop'
 alias vim="nvim"
+alias v='nvim'
 alias vz="nvim ~/.zshrc"
 alias c="clear"
 
