@@ -52,6 +52,8 @@ function y() {
 }
 
 
+set -o vi
+
 # for speed test
 alias speed=speedtest-cli
 
