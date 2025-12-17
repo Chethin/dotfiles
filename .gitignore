@@ -21,6 +21,9 @@
 !.config/nvim/
 !.config/nvim/**
 
+!.config/karabiner/
+!.config/karabiner/**
+
 !.config/sketchybar/
 !.config/sketchybar/**
 

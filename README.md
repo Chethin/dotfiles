@@ -69,6 +69,9 @@ This repository contains my personal dotfiles, mainly including window managemen
 - **Status bar configuration:**
   - Arch: `~/.config/waybar`
   - Mac: `~/.config/sketchybar`
+- Keyboard configuration:
+  - Arch: (hypr keymaps)
+  - Mac: `~/.config/karabiner` (Karabiner)
 - **Editor configuration:**
   - Neovim: `~/.config/nvim`
 - **Terminal configuration (Ghostty):**
