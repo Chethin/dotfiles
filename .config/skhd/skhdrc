@@ -23,7 +23,7 @@ cmd - return : open -a 'ghostty'
 
 # App shortcuts
 # alt - c: open -n -a Ghostty --args --command nvim
-alt - s: open -a 'Spotify'
+alt - s: open -a 'Music'
 alt - d: open -a 'Discord'
 alt - a: open -a 'ChatGPT'
 # alt - f: open -a 'Finder'
