@@ -1,10 +1,28 @@
-# Ignore everything but what I want to store in the remote
 *
+!.gitignore
 
 !.zshrc
-!.config/btop
-!.config/fastfetch
-!.config/ghostty
-!.config/hypr
-!.config/nvim
-!.config/waybar
+!README.md
+
+!.config/
+
+!.config/borders/
+!.config/borders/**
+
+!.config/btop/
+!.config/btop/**
+
+!.config/fastfetch/
+!.config/fastfetch/**
+
+!.config/ghostty/
+!.config/ghostty/**
+
+!.config/hypr/
+!.config/hypr/**
+
+!.config/nvim/
+!.config/nvim/**
+
+!.config/waybar/
+!.config/waybar/**

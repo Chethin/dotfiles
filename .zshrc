@@ -66,3 +66,6 @@ alias pacs="sudo pacman -S"
 alias pacup="sudo pacman -Syu"
 alias pacf="pacman -Ss"
 alias pacq="pacman -Q"
+
+# opencode
+export PATH=/home/chethin/.opencode/bin:$PATH
