@@ -60,6 +60,7 @@ alias top="btop"
 alias vim="nvim"
 alias v="nvim"
 alias vz="nvim ~/.zshrc"
+alias lg="lazygit"
 alias c="clear"
 
 alias pacs="sudo pacman -S"
