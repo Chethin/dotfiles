@@ -64,6 +64,7 @@ alias lg="lazygit"
 alias c="clear"
 alias open="xdg-open"
 
+# pacman aliases
 alias pacs="sudo pacman -S"
 alias pacup="sudo pacman -Syu"
 alias pacf="pacman -Ss"
@@ -71,3 +72,5 @@ alias pacq="pacman -Q"
 
 # opencode
 export PATH=/home/chethin/.opencode/bin:$PATH
+
+export HYPRSHOT_DIR=$HOME/Pictures
