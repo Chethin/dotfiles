@@ -62,6 +62,7 @@ alias v="nvim"
 alias vz="nvim ~/.zshrc"
 alias lg="lazygit"
 alias c="clear"
+alias open="xdg-open"
 
 alias pacs="sudo pacman -S"
 alias pacup="sudo pacman -Syu"
