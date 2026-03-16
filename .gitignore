@@ -32,3 +32,6 @@
 
 !.config/yabai/
 !.config/yabai/**
+
+!.config/tmux/
+!.config/tmux/**
