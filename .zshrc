@@ -67,3 +67,6 @@ alias vz="nvim ~/.zshrc"
 alias c="clear"
 
 eval $(thefuck --alias)
+
+# Hermes Agent — ensure ~/.local/bin is on PATH
+export PATH="$HOME/.local/bin:$PATH"

@@ -18,7 +18,7 @@ yabai -m signal --add event=display_changed action='yabai -m window --focus firs
 # global settings
 yabai -m config layout                     bsp          \
                 window_placement           second_child \
-                mouse_follows_focus        on           \
+                mouse_follows_focus        off          \
                 focus_follows_mouse        off          \
                 window_zoom_persist        off          \
                 window_topmost             off          \

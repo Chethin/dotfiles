@@ -23,17 +23,15 @@ cmd - return : open -a 'ghostty'
 
 # App shortcuts
 # alt - c: open -n -a Ghostty --args --command nvim
+alt - e: open -a 'Hermes'
 alt - s: open -a 'Music'
 alt - d: open -a 'Discord'
-alt - a: open -a 'ChatGPT'
-# alt - f: open -a 'Finder'
 alt - m: open -a 'Messages'
 
 # stop/start/restart yabai
 ctrl + alt - q: yabai --stop-service;
 ctrl + alt - s: yabai --start-service;
 ctrl + alt - r: yabai --restart-service;
-
 alt - 1: yabai -m space --focus 1
 alt - 2: yabai -m space --focus 2
 alt - 3: yabai -m space --focus 3
